@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		3788F2960A3520FF4B31B3F1 /* Pods_OneStopNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */; };
 		98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EE8228A247A0068AE13 /* AppDelegate.swift */; };
-		98808EEB228A247A0068AE13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EEA228A247A0068AE13 /* ViewController.swift */; };
+		98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EEA228A247A0068AE13 /* MainScreenViewController.swift */; };
 		98808EEE228A247A0068AE13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98808EEC228A247A0068AE13 /* Main.storyboard */; };
 		98808EF0228A247B0068AE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98808EEF228A247B0068AE13 /* Assets.xcassets */; };
 		98808EF3228A247B0068AE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98808EF1228A247B0068AE13 /* LaunchScreen.storyboard */; };
+		98808EFB228A2D370068AE13 /* ExploreTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +21,12 @@
 		73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneStopNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE5228A247A0068AE13 /* OneStopNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneStopNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE8228A247A0068AE13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98808EEA228A247A0068AE13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98808EEA228A247A0068AE13 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		98808EED228A247A0068AE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98808EEF228A247B0068AE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98808EF2228A247B0068AE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98808EF4228A247B0068AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTopicsViewController.swift; sourceTree = "<group>"; };
 		E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.release.xcconfig"; path = "Target Support Files/Pods-OneStopNews/Pods-OneStopNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +48,6 @@
 				0CE53C28698DF52C4BAD39C5 /* Pods-OneStopNews.debug.xcconfig */,
 				E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,13 +81,30 @@
 			isa = PBXGroup;
 			children = (
 				98808EE8228A247A0068AE13 /* AppDelegate.swift */,
-				98808EEA228A247A0068AE13 /* ViewController.swift */,
-				98808EEC228A247A0068AE13 /* Main.storyboard */,
+				98808EFC228A2E790068AE13 /* Controllers */,
+				98808EFD228A2E830068AE13 /* Views */,
 				98808EEF228A247B0068AE13 /* Assets.xcassets */,
-				98808EF1228A247B0068AE13 /* LaunchScreen.storyboard */,
 				98808EF4228A247B0068AE13 /* Info.plist */,
 			);
 			path = OneStopNews;
+			sourceTree = "<group>";
+		};
+		98808EFC228A2E790068AE13 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98808EEA228A247A0068AE13 /* MainScreenViewController.swift */,
+				98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98808EFD228A2E830068AE13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98808EEC228A247A0068AE13 /* Main.storyboard */,
+				98808EF1228A247B0068AE13 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98808EEB228A247A0068AE13 /* ViewController.swift in Sources */,
+				98808EFB228A2D370068AE13 /* ExploreTopicsViewController.swift in Sources */,
+				98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */,
 				98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
