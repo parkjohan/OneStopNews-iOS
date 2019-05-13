@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3788F2960A3520FF4B31B3F1 /* Pods_OneStopNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */; };
 		98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EE8228A247A0068AE13 /* AppDelegate.swift */; };
 		98808EEB228A247A0068AE13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EEA228A247A0068AE13 /* ViewController.swift */; };
 		98808EEE228A247A0068AE13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98808EEC228A247A0068AE13 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CE53C28698DF52C4BAD39C5 /* Pods-OneStopNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.debug.xcconfig"; path = "Target Support Files/Pods-OneStopNews/Pods-OneStopNews.debug.xcconfig"; sourceTree = "<group>"; };
+		73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneStopNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE5228A247A0068AE13 /* OneStopNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneStopNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE8228A247A0068AE13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98808EEA228A247A0068AE13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		98808EEF228A247B0068AE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98808EF2228A247B0068AE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98808EF4228A247B0068AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.release.xcconfig"; path = "Target Support Files/Pods-OneStopNews/Pods-OneStopNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3788F2960A3520FF4B31B3F1 /* Pods_OneStopNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A6F9FAA0EDFA67C444A068C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CE53C28698DF52C4BAD39C5 /* Pods-OneStopNews.debug.xcconfig */,
+				E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		70BB468AF29D9D2857D54E2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98808EDC228A247A0068AE13 = {
 			isa = PBXGroup;
 			children = (
 				98808EE7228A247A0068AE13 /* OneStopNews */,
 				98808EE6228A247A0068AE13 /* Products */,
+				3A6F9FAA0EDFA67C444A068C /* Pods */,
+				70BB468AF29D9D2857D54E2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98808EF7228A247B0068AE13 /* Build configuration list for PBXNativeTarget "OneStopNews" */;
 			buildPhases = (
+				4A66823705E745F1498A9242 /* [CP] Check Pods Manifest.lock */,
 				98808EE1228A247A0068AE13 /* Sources */,
 				98808EE2228A247A0068AE13 /* Frameworks */,
 				98808EE3228A247A0068AE13 /* Resources */,
+				C121C12DD5C10F8C937C15A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A66823705E745F1498A9242 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneStopNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C121C12DD5C10F8C937C15A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneStopNews/Pods-OneStopNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneStopNews/Pods-OneStopNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98808EE1228A247A0068AE13 /* Sources */ = {
@@ -280,6 +360,7 @@
 		};
 		98808EF8228A247B0068AE13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE53C28698DF52C4BAD39C5 /* Pods-OneStopNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +379,7 @@
 		};
 		98808EF9228A247B0068AE13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
