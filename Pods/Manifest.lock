@@ -2,12 +2,14 @@ PODS:
   - Alamofire (4.8.2)
   - Hero (1.4.0)
   - PageMenu (2.0.0)
+  - PagingMenuController (2.2.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - Hero
   - PageMenu
+  - PagingMenuController (~> 2.2)
   - SwiftyJSON
 
 SPEC REPOS:
@@ -15,14 +17,16 @@ SPEC REPOS:
     - Alamofire
     - Hero
     - PageMenu
+    - PagingMenuController
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 6203c990513d3fab286a1d2c16a1a0a5f7d7e23c
+PODFILE CHECKSUM: 29d121ac524971842f1145c78859a26c9a3d31c6
 
 COCOAPODS: 1.6.0
