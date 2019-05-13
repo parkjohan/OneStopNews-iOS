@@ -10,5 +10,4 @@ target 'OneStopNews' do
 	pod 'PageMenu'
 	pod 'Alamofire'
 	pod 'Hero'
-	pod 'PagingMenuController', '~> 2.2'
 end

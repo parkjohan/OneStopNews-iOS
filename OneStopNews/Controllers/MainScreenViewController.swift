@@ -8,10 +8,11 @@
 
 import UIKit
 import Hero
-
+import PageMenu
 
 class MainScreenViewController: UIViewController {
     
+    var pageMenu: CAPSPageMenu?
     
     override func viewDidLoad() {
         super.viewDidLoad()
