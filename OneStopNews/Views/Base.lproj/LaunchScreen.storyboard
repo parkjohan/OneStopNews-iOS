@@ -18,21 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="osnLogo" translatesAutoresizingMaskIntoConstraints="NO" id="S1M-Lk-Y2n">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="One Stop News" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-j2-KZu">
+                                <rect key="frame" x="20" y="391" width="247" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="38u-XN-M1F"/>
+                                    <constraint firstAttribute="width" constant="247" id="W70-vh-Uch"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome to" translatesAutoresizingMaskIntoConstraints="NO" id="Lax-lU-JKn">
+                                <rect key="frame" x="20" y="316" width="308" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="308" id="6aS-H8-P5t"/>
+                                    <constraint firstAttribute="height" constant="67" id="lob-3b-sS6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Find all the news and stories you need in one stop." translatesAutoresizingMaskIntoConstraints="NO" id="Cb1-Ve-dDp">
+                                <rect key="frame" x="20" y="436" width="247" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="V32-N0-X8U"/>
+                                    <constraint firstAttribute="width" constant="247" id="xEB-Yg-myM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="osnLogo" translatesAutoresizingMaskIntoConstraints="NO" id="S1M-Lk-Y2n">
+                                <rect key="frame" x="20" y="149" width="159" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="nz3-Op-1ex"/>
+                                    <constraint firstAttribute="width" constant="159" id="yQK-zG-rnN"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iNA-j2-KZu" firstAttribute="top" secondItem="Lax-lU-JKn" secondAttribute="bottom" constant="8" id="2I0-TQ-WEy"/>
+                            <constraint firstItem="Cb1-Ve-dDp" firstAttribute="top" secondItem="iNA-j2-KZu" secondAttribute="bottom" constant="8" id="7Ly-cs-Dfi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iNA-j2-KZu" secondAttribute="trailing" constant="147" id="9lC-Qu-YM5"/>
+                            <constraint firstItem="iNA-j2-KZu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MXY-Gh-Fla"/>
+                            <constraint firstItem="S1M-Lk-Y2n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="QgJ-kk-vcO"/>
+                            <constraint firstItem="Cb1-Ve-dDp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aZ3-YB-RF8"/>
+                            <constraint firstItem="Lax-lU-JKn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="chD-2V-NN1"/>
+                            <constraint firstItem="Lax-lU-JKn" firstAttribute="top" secondItem="S1M-Lk-Y2n" secondAttribute="bottom" constant="8" id="hBQ-Lj-V4o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lax-lU-JKn" secondAttribute="trailing" constant="86" id="nGP-Ay-eB2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cb1-Ve-dDp" secondAttribute="trailing" constant="147" id="rh5-Un-8TQ"/>
+                            <constraint firstItem="S1M-Lk-Y2n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="v8g-m6-56S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Find all the news and stories you need in one stop." width="236" height="38"/>
+        <image name="One Stop News" width="243" height="37"/>
+        <image name="Welcome to" width="191" height="27.5"/>
         <image name="osnLogo" width="159" height="143"/>
     </resources>
 </document>

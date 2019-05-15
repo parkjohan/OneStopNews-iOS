@@ -26,6 +26,36 @@
             </objects>
             <point key="canvasLocation" x="1588" y="-119"/>
         </scene>
+        <!--Top Stories View Controller-->
+        <scene sceneID="09B-KV-f0V">
+            <objects>
+                <viewController storyboardIdentifier="TopStoriesViewController" id="1yH-Ne-McD" customClass="TopStoriesViewController" customModule="OneStopNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aLr-ui-BeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uki-kJ-fDH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zE3-dX-hgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="-121"/>
+        </scene>
+        <!--Business View Controller-->
+        <scene sceneID="9iU-AU-TaE">
+            <objects>
+                <viewController storyboardIdentifier="BusinessViewController" id="yp6-bS-oGt" customClass="BusinessViewController" customModule="OneStopNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M0h-bw-Orn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Rxb-vE-pe1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQ6-Em-qJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3207" y="-125"/>
+        </scene>
         <!--Explore Topics View Controller-->
         <scene sceneID="Gd4-JE-gky">
             <objects>
@@ -48,6 +78,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wQS-cx-PHg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Fd-cu-FKa">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
