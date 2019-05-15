@@ -10,4 +10,5 @@ target 'OneStopNews' do
 	pod 'PageMenu'
 	pod 'Alamofire'
 	pod 'Hero'
+  pod 'CardParts'
 end

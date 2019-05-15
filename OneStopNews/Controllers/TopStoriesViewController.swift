@@ -11,5 +11,28 @@ import UIKit
 
 class TopStoriesViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     
+    //var articles = [Article]()
+    
+    var testData = ["hello","hello","hello","hello","hello","hello","hello","hello","hello","hello",]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+}
+
+extension TopStoriesViewController: UITableViewDataSource, UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return testData.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Article Cell", for: indexPath) as! TopStoriesTableViewCell
+        cell.titleLabel.text = testData[indexPath.row]
+        return cell
+    }
 }

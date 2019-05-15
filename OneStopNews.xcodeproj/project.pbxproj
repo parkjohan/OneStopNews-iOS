@@ -17,6 +17,8 @@
 		98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EFF228A42180068AE13 /* OSNNetworking.swift */; };
 		98B0ADFB228BDDAA00CC0291 /* TopStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0ADFA228BDDAA00CC0291 /* TopStoriesViewController.swift */; };
 		98B0ADFD228BEA5E00CC0291 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0ADFC228BEA5E00CC0291 /* BusinessViewController.swift */; };
+		98B0AE01228BF92800CC0291 /* TopStoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0AE00228BF92800CC0291 /* TopStoriesTableViewCell.swift */; };
+		98B0AE03228BFC8000CC0291 /* RoundedShadowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		98808EFF228A42180068AE13 /* OSNNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSNNetworking.swift; sourceTree = "<group>"; };
 		98B0ADFA228BDDAA00CC0291 /* TopStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewController.swift; sourceTree = "<group>"; };
 		98B0ADFC228BEA5E00CC0291 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
+		98B0AE00228BF92800CC0291 /* TopStoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTableViewCell.swift; sourceTree = "<group>"; };
+		98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowCard.swift; sourceTree = "<group>"; };
 		E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.release.xcconfig"; path = "Target Support Files/Pods-OneStopNews/Pods-OneStopNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,8 +105,10 @@
 			children = (
 				98808EEA228A247A0068AE13 /* MainScreenViewController.swift */,
 				98B0ADFA228BDDAA00CC0291 /* TopStoriesViewController.swift */,
+				98B0AE00228BF92800CC0291 /* TopStoriesTableViewCell.swift */,
 				98B0ADFC228BEA5E00CC0291 /* BusinessViewController.swift */,
 				98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */,
+				98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -217,8 +223,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OneStopNews/Pods-OneStopNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CardParts/CardParts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -226,8 +238,14 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CardParts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,9 +263,11 @@
 				98B0ADFD228BEA5E00CC0291 /* BusinessViewController.swift in Sources */,
 				98808EFB228A2D370068AE13 /* ExploreTopicsViewController.swift in Sources */,
 				98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */,
+				98B0AE03228BFC8000CC0291 /* RoundedShadowCard.swift in Sources */,
 				98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */,
 				98B0ADFB228BDDAA00CC0291 /* TopStoriesViewController.swift in Sources */,
 				98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */,
+				98B0AE01228BF92800CC0291 /* TopStoriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
