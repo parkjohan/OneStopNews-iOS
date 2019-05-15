@@ -16,6 +16,7 @@ class TopStoriesViewController: UIViewController {
     //var articles = [Article]()
     
     var testData = ["hello","hello","hello","hello","hello","hello","hello","hello","hello","hello",]
+    let cnnTopStoriesURL = "https://one-stop-news-api.herokuapp.com/cnn/?category=top-stories"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,5 +35,9 @@ extension TopStoriesViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Article Cell", for: indexPath) as! TopStoriesTableViewCell
         cell.titleLabel.text = testData[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
     }
 }

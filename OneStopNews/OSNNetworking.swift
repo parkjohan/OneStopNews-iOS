@@ -12,8 +12,6 @@ import Alamofire
 
 class OSNNetworking {
     
-    let cnnTopStoriesURL = "https://one-stop-news-api.herokuapp.com/cnn/?category=top-stories"
-    
     func getArticles(url: String, parameters: [String:Any]) {
         Alamofire.request(url, method: .get, parameters: parameters).responseJSON { (response) in
             if response.result.isSuccess {
