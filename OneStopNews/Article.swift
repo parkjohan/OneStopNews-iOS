@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Article {
+    var title: String
+    var summary: String
+    var url: URL
+    var datePublished: Date
+    var image: URL
+}

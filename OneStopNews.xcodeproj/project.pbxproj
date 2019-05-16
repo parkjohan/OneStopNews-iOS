@@ -15,10 +15,8 @@
 		98808EF3228A247B0068AE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98808EF1228A247B0068AE13 /* LaunchScreen.storyboard */; };
 		98808EFB228A2D370068AE13 /* ExploreTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */; };
 		98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EFF228A42180068AE13 /* OSNNetworking.swift */; };
-		98B0ADFB228BDDAA00CC0291 /* TopStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0ADFA228BDDAA00CC0291 /* TopStoriesViewController.swift */; };
-		98B0ADFD228BEA5E00CC0291 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0ADFC228BEA5E00CC0291 /* BusinessViewController.swift */; };
-		98B0AE01228BF92800CC0291 /* TopStoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0AE00228BF92800CC0291 /* TopStoriesTableViewCell.swift */; };
 		98B0AE03228BFC8000CC0291 /* RoundedShadowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */; };
+		98B0AE23228CEF0700CC0291 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0AE22228CEF0700CC0291 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +31,8 @@
 		98808EF4228A247B0068AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTopicsViewController.swift; sourceTree = "<group>"; };
 		98808EFF228A42180068AE13 /* OSNNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSNNetworking.swift; sourceTree = "<group>"; };
-		98B0ADFA228BDDAA00CC0291 /* TopStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewController.swift; sourceTree = "<group>"; };
-		98B0ADFC228BEA5E00CC0291 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
-		98B0AE00228BF92800CC0291 /* TopStoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTableViewCell.swift; sourceTree = "<group>"; };
 		98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowCard.swift; sourceTree = "<group>"; };
+		98B0AE22228CEF0700CC0291 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.release.xcconfig"; path = "Target Support Files/Pods-OneStopNews/Pods-OneStopNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +88,7 @@
 			children = (
 				98808EE8228A247A0068AE13 /* AppDelegate.swift */,
 				98808EFF228A42180068AE13 /* OSNNetworking.swift */,
+				98B0AE22228CEF0700CC0291 /* Article.swift */,
 				98808EFC228A2E790068AE13 /* Controllers */,
 				98808EFD228A2E830068AE13 /* Views */,
 				98808EEF228A247B0068AE13 /* Assets.xcassets */,
@@ -104,9 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				98808EEA228A247A0068AE13 /* MainScreenViewController.swift */,
-				98B0ADFA228BDDAA00CC0291 /* TopStoriesViewController.swift */,
-				98B0AE00228BF92800CC0291 /* TopStoriesTableViewCell.swift */,
-				98B0ADFC228BEA5E00CC0291 /* BusinessViewController.swift */,
 				98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */,
 				98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */,
 			);
@@ -260,14 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B0ADFD228BEA5E00CC0291 /* BusinessViewController.swift in Sources */,
+				98B0AE23228CEF0700CC0291 /* Article.swift in Sources */,
 				98808EFB228A2D370068AE13 /* ExploreTopicsViewController.swift in Sources */,
 				98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */,
 				98B0AE03228BFC8000CC0291 /* RoundedShadowCard.swift in Sources */,
 				98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */,
-				98B0ADFB228BDDAA00CC0291 /* TopStoriesViewController.swift in Sources */,
 				98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */,
-				98B0AE01228BF92800CC0291 /* TopStoriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +343,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -406,7 +397,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -417,16 +407,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB7GXJH63M;
+				DEVELOPMENT_TEAM = 7B227ZD53A;
 				INFOPLIST_FILE = OneStopNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.parkjohan.johanpark.OneStopNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -437,16 +426,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB7GXJH63M;
+				DEVELOPMENT_TEAM = 7B227ZD53A;
 				INFOPLIST_FILE = OneStopNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.parkjohan.johanpark.OneStopNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

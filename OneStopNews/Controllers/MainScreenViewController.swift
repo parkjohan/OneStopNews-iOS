@@ -33,16 +33,29 @@ extension MainScreenViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        // Array of ViewControllers containing each page in PageMenu
         var controllerArray : [UIViewController] = []
         
-        let topStoriesViewController = storyboard.instantiateViewController(withIdentifier: "TopStoriesViewController") as! TopStoriesViewController
-        let businessViewController = storyboard.instantiateViewController(withIdentifier: "BusinessViewController") as! BusinessViewController
-        topStoriesViewController.title = "Top Stories"
-        businessViewController.title = "Business"
+        //let topStoriesViewController = storyboard.instantiateViewController(withIdentifier: "TopStoriesViewController") as! TopStoriesViewController
+        // Create ViewController
+        let firstVC = UIViewController()
+        let secondVC = UIViewController()
+        let thirdVC = UIViewController()
+        let fourthVC = UIViewController()
         
-        controllerArray.append(topStoriesViewController)
-        controllerArray.append(businessViewController)
+        // Add title for each ViewController page
+        firstVC.title = "CNN"
+        secondVC.title = "New York Times"
+        thirdVC.title = "Huffington Post"
+        fourthVC.title = "NBC"
         
+        // Append the ViewController to the array to display in PageMenu
+        controllerArray.append(firstVC)
+        controllerArray.append(secondVC)
+        controllerArray.append(thirdVC)
+        controllerArray.append(fourthVC)
+        
+        // Customize PageMenu
         let parameters: [CAPSPageMenuOption] = [
             .useMenuLikeSegmentedControl(true),
             .menuItemSeparatorWidth(0.0),
@@ -54,7 +67,7 @@ extension MainScreenViewController {
             .bottomMenuHairlineColor(.white),
             .menuHeight(65.0),
             .menuItemWidth(self.view.frame.width/3),
-            .menuItemFont(UIFont.systemFont(ofSize: 20)),
+            .menuItemFont(UIFont.systemFont(ofSize: 15)),
             .centerMenuItems(true),
             .selectedMenuItemLabelColor(.white),
             .unselectedMenuItemLabelColor(.white),
