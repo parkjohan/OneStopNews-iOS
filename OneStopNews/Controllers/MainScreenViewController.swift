@@ -24,7 +24,6 @@ class MainScreenViewController: UIViewController {
 }
 
 
-
 //MARK: - PageMenu Controller
 
 extension MainScreenViewController {
@@ -37,11 +36,19 @@ extension MainScreenViewController {
         var controllerArray : [UIViewController] = []
         
         //let topStoriesViewController = storyboard.instantiateViewController(withIdentifier: "TopStoriesViewController") as! TopStoriesViewController
-        // Create ViewController
+        
+        // Create ViewController for each page in pagemenu
         let firstVC = UIViewController()
+        firstVC.view.backgroundColor = UIColor.red
+        
         let secondVC = UIViewController()
+        secondVC.view.backgroundColor = UIColor.blue
+
         let thirdVC = UIViewController()
+        thirdVC.view.backgroundColor = UIColor.green
+
         let fourthVC = UIViewController()
+        fourthVC.view.backgroundColor = UIColor.purple
         
         // Add title for each ViewController page
         firstVC.title = "CNN"
@@ -67,6 +74,7 @@ extension MainScreenViewController {
             .bottomMenuHairlineColor(.white),
             .menuHeight(65.0),
             .menuItemWidth(self.view.frame.width/3),
+            .menuItemWidthBasedOnTitleTextWidth(true),
             .menuItemFont(UIFont.systemFont(ofSize: 15)),
             .centerMenuItems(true),
             .selectedMenuItemLabelColor(.white),
