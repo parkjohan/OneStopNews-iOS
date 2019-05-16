@@ -12,6 +12,7 @@ import Alamofire
 
 class OSNNetworking {
     
+    // Get articles for using url(String) and parameters.
     func getArticles(url: String, parameters: [String:Any]) {
         Alamofire.request(url, method: .get, parameters: parameters).responseJSON { (response) in
             if response.result.isSuccess {
@@ -25,8 +26,8 @@ class OSNNetworking {
         }
     }
     
-//    func updateArticles(json: JSON) {
-//        let article = json["calories"].intValue
-//        print(calories)
-//    }
+    
+    
+
+    
 }
