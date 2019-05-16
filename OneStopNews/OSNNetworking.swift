@@ -24,6 +24,9 @@ class OSNNetworking {
             }
         }
     }
-
     
+//    func updateArticles(json: JSON) {
+//        let article = json["calories"].intValue
+//        print(calories)
+//    }
 }

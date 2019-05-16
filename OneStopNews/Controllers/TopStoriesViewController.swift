@@ -17,11 +17,12 @@ class TopStoriesViewController: UIViewController {
     
     var testData = ["hello","hello","hello","hello","hello","hello","hello","hello","hello","hello",]
     let cnnTopStoriesURL = "https://one-stop-news-api.herokuapp.com/cnn/?category=top-stories"
+    var networking = OSNNetworking()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        //networking.getArticles(url: cnnTopStoriesURL, parameters: [])
     }
 }
 
