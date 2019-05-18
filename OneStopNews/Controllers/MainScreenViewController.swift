@@ -19,6 +19,9 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.barTintColor = UIColor.red
+        navigationController?.navigationBar.tintColor = UIColor.black
+        title = "One Stop News"
         setupPageMenu()
     }
 }
@@ -35,10 +38,8 @@ extension MainScreenViewController {
         // Array of ViewControllers containing each page in PageMenu
         var controllerArray : [UIViewController] = []
         
-        //let topStoriesViewController = storyboard.instantiateViewController(withIdentifier: "TopStoriesViewController") as! TopStoriesViewController
-        
         // Create ViewController for each page in pagemenu
-        let firstVC = UIViewController()
+        let firstVC = storyboard.instantiateViewController(withIdentifier: "CNN")
         firstVC.view.backgroundColor = UIColor.red
         
         let secondVC = UIViewController()
@@ -64,26 +65,20 @@ extension MainScreenViewController {
         
         // Customize PageMenu
         let parameters: [CAPSPageMenuOption] = [
-            .useMenuLikeSegmentedControl(true),
-            .menuItemSeparatorWidth(0.0),
-            .useMenuLikeSegmentedControl(true),
-            .menuItemSeparatorPercentageHeight(0.0),
+            //.menuItemWidthBasedOnTitleTextWidth(true),
+            .menuItemWidth(150.0),
             .scrollMenuBackgroundColor(.black),
             .viewBackgroundColor(.white),
             .selectionIndicatorColor(.red),
             .bottomMenuHairlineColor(.white),
             .menuHeight(65.0),
-            .menuItemWidth(self.view.frame.width/3),
-            .menuItemWidthBasedOnTitleTextWidth(true),
             .menuItemFont(UIFont.systemFont(ofSize: 15)),
             .centerMenuItems(true),
             .selectedMenuItemLabelColor(.white),
-            .unselectedMenuItemLabelColor(.white),
-            .menuMargin(0.0)
         ]
         
         // Initialize page menu with controller array, frame, and optional parameters
-        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0.0, y: 80.0, width: self.view.frame.width, height: self.view.frame.height), pageMenuOptions: parameters)
+        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0.0, y: 85.0, width: self.view.frame.width, height: self.view.frame.height), pageMenuOptions: parameters)
         
         self.view.addSubview(pageMenu!.view)
     }
