@@ -17,6 +17,10 @@
 		98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EFF228A42180068AE13 /* OSNNetworking.swift */; };
 		98B0AE03228BFC8000CC0291 /* RoundedShadowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */; };
 		98B0AE23228CEF0700CC0291 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0AE22228CEF0700CC0291 /* Article.swift */; };
+		98EDBA81228FE6880062E4E2 /* CNNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDBA80228FE6880062E4E2 /* CNNViewController.swift */; };
+		98EDBA83228FE6A60062E4E2 /* NYTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDBA82228FE6A60062E4E2 /* NYTimesViewController.swift */; };
+		98EDBA85228FE6B60062E4E2 /* HuffingtonPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDBA84228FE6B60062E4E2 /* HuffingtonPostViewController.swift */; };
+		98EDBA87228FE6C80062E4E2 /* NBCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDBA86228FE6C80062E4E2 /* NBCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		98808EFF228A42180068AE13 /* OSNNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSNNetworking.swift; sourceTree = "<group>"; };
 		98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowCard.swift; sourceTree = "<group>"; };
 		98B0AE22228CEF0700CC0291 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		98EDBA80228FE6880062E4E2 /* CNNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNNViewController.swift; sourceTree = "<group>"; };
+		98EDBA82228FE6A60062E4E2 /* NYTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesViewController.swift; sourceTree = "<group>"; };
+		98EDBA84228FE6B60062E4E2 /* HuffingtonPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuffingtonPostViewController.swift; sourceTree = "<group>"; };
+		98EDBA86228FE6C80062E4E2 /* NBCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBCViewController.swift; sourceTree = "<group>"; };
 		E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.release.xcconfig"; path = "Target Support Files/Pods-OneStopNews/Pods-OneStopNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +111,10 @@
 				98808EEA228A247A0068AE13 /* MainScreenViewController.swift */,
 				98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */,
 				98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */,
+				98EDBA80228FE6880062E4E2 /* CNNViewController.swift */,
+				98EDBA82228FE6A60062E4E2 /* NYTimesViewController.swift */,
+				98EDBA84228FE6B60062E4E2 /* HuffingtonPostViewController.swift */,
+				98EDBA86228FE6C80062E4E2 /* NBCViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,9 +268,13 @@
 			files = (
 				98B0AE23228CEF0700CC0291 /* Article.swift in Sources */,
 				98808EFB228A2D370068AE13 /* ExploreTopicsViewController.swift in Sources */,
+				98EDBA81228FE6880062E4E2 /* CNNViewController.swift in Sources */,
 				98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */,
 				98B0AE03228BFC8000CC0291 /* RoundedShadowCard.swift in Sources */,
 				98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */,
+				98EDBA87228FE6C80062E4E2 /* NBCViewController.swift in Sources */,
+				98EDBA83228FE6A60062E4E2 /* NYTimesViewController.swift in Sources */,
+				98EDBA85228FE6B60062E4E2 /* HuffingtonPostViewController.swift in Sources */,
 				98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
