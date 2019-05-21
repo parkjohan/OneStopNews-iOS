@@ -15,7 +15,8 @@ class RoundedShadowCardView: UIView {
         let shadowOpacity: Float = 1.0
         let shadowYOffset = 4.0
         let shadowXOffset = 0.0
-        let shadowColor = UIColor(red: 218/255, green: 218/255, blue: 218/255, alpha: 1.0).cgColor
+        //let shadowColor = UIColor(red: 218/255, green: 218/255, blue: 218/255, alpha: 1.0).cgColor
+        let shadowColor = UIColor(red:0.00, green:0.00, blue:0.00, alpha:5.0).cgColor
         let cornerRadius: CGFloat = 10
         
         layer.shadowColor = shadowColor

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wQS-cx-PHg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wQS-cx-PHg">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="cwe-oM-fvY" customClass="MainScreenViewController" customModule="OneStopNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DhZ-1F-dit">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LQ9-iC-Hp8"/>
@@ -44,12 +44,74 @@
             </objects>
             <point key="canvasLocation" x="3214" y="-119"/>
         </scene>
+        <!--Universal Table View Controller-->
+        <scene sceneID="q6v-59-TZw">
+            <objects>
+                <tableViewController storyboardIdentifier="UniversalTableView" id="Yak-RK-UBV" customClass="UniversalTableViewController" customModule="OneStopNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="beQ-w6-JJ2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="251" id="unR-es-Lyb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="251"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="unR-es-Lyb" id="XTW-LU-7ky">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKI-Kx-oJf" customClass="RoundedShadowCardView" customModule="OneStopNews" customModuleProvider="target">
+                                            <rect key="frame" x="32" y="23" width="350" height="200"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS IS A SUMMARY TEST WITH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUm-HM-hjt">
+                                                    <rect key="frame" x="15" y="55" width="257" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS IS A TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtx-vY-Uo4">
+                                                    <rect key="frame" x="16" y="15" width="122" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Mtx-vY-Uo4" firstAttribute="top" secondItem="sKI-Kx-oJf" secondAttribute="top" constant="15" id="8Ua-hb-Abc"/>
+                                                <constraint firstAttribute="width" constant="350" id="CAe-ag-69Y"/>
+                                                <constraint firstAttribute="height" constant="200" id="HIA-Ki-iih"/>
+                                                <constraint firstItem="wUm-HM-hjt" firstAttribute="top" secondItem="Mtx-vY-Uo4" secondAttribute="bottom" constant="20" id="Hr0-bw-I3q"/>
+                                                <constraint firstItem="wUm-HM-hjt" firstAttribute="leading" secondItem="sKI-Kx-oJf" secondAttribute="leading" constant="15" id="Tap-6I-poU"/>
+                                                <constraint firstItem="Mtx-vY-Uo4" firstAttribute="leading" secondItem="sKI-Kx-oJf" secondAttribute="leading" constant="16" id="XcD-of-bAo"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="sKI-Kx-oJf" secondAttribute="bottom" constant="21" id="8kD-4s-wO2"/>
+                                        <constraint firstItem="sKI-Kx-oJf" firstAttribute="top" secondItem="XTW-LU-7ky" secondAttribute="topMargin" constant="12" id="buj-q8-XsP"/>
+                                        <constraint firstItem="sKI-Kx-oJf" firstAttribute="centerX" secondItem="XTW-LU-7ky" secondAttribute="centerX" id="ywu-ka-gZW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Yak-RK-UBV" id="JjL-nr-Bwx"/>
+                            <outlet property="delegate" destination="Yak-RK-UBV" id="wyT-Jo-dBc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZtO-7W-INE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3173.913043478261" y="567.1875"/>
+        </scene>
         <!--Explore Topics View Controller-->
         <scene sceneID="Gd4-JE-gky">
             <objects>
                 <viewController id="G14-EF-iZ9" customClass="ExploreTopicsViewController" customModule="OneStopNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmC-4x-ucd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qr2-zL-kgu"/>
@@ -65,10 +127,19 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wQS-cx-PHg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Fd-cu-FKa">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="fill" id="4Fd-cu-FKa">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="selectedImageTintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="zvh-0N-VOs" kind="relationship" relationship="viewControllers" id="ctc-qZ-hDf"/>
@@ -83,7 +154,9 @@
         <scene sceneID="4lY-9x-UAM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zvh-0N-VOs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="newspaper-7" id="O1r-Cm-h0y"/>
+                    <tabBarItem key="tabBarItem" title="" image="newspaper-7" id="O1r-Cm-h0y">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bkK-ry-kdB">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

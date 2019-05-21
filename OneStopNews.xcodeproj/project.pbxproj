@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1D4B67AE2293B0D100CF9ADE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67AD2293B0D100CF9ADE /* Category.swift */; };
 		1D4B67B02293B0FE00CF9ADE /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67AF2293B0FE00CF9ADE /* Provider.swift */; };
+		1D4B67B22293C97C00CF9ADE /* UniversalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67B12293C97C00CF9ADE /* UniversalTableViewController.swift */; };
+		1D4B67B42293D62000CF9ADE /* PastelColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67B32293D62000CF9ADE /* PastelColors.swift */; };
 		3788F2960A3520FF4B31B3F1 /* Pods_OneStopNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */; };
 		98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EE8228A247A0068AE13 /* AppDelegate.swift */; };
 		98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EEA228A247A0068AE13 /* MainScreenViewController.swift */; };
@@ -27,8 +29,11 @@
 
 /* Begin PBXFileReference section */
 		0CE53C28698DF52C4BAD39C5 /* Pods-OneStopNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.debug.xcconfig"; path = "Target Support Files/Pods-OneStopNews/Pods-OneStopNews.debug.xcconfig"; sourceTree = "<group>"; };
+		10069792838191F14785DBE3 /* Pods-OneStopNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneStopNews/Pods-OneStopNews.debug.xcconfig"; sourceTree = "<group>"; };
 		1D4B67AD2293B0D100CF9ADE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		1D4B67AF2293B0FE00CF9ADE /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		1D4B67B12293C97C00CF9ADE /* UniversalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewController.swift; sourceTree = "<group>"; };
+		1D4B67B32293D62000CF9ADE /* PastelColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelColors.swift; sourceTree = "<group>"; };
 		73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneStopNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE5228A247A0068AE13 /* OneStopNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneStopNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE8228A247A0068AE13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 		98EDBA82228FE6A60062E4E2 /* NYTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesViewController.swift; sourceTree = "<group>"; };
 		98EDBA84228FE6B60062E4E2 /* HuffingtonPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuffingtonPostViewController.swift; sourceTree = "<group>"; };
 		98EDBA86228FE6C80062E4E2 /* NBCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBCViewController.swift; sourceTree = "<group>"; };
+		A58EF73E218E8E557C219B25 /* Pods-OneStopNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneStopNews/Pods-OneStopNews.release.xcconfig"; sourceTree = "<group>"; };
 		E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneStopNews.release.xcconfig"; path = "Target Support Files/Pods-OneStopNews/Pods-OneStopNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +71,8 @@
 			children = (
 				0CE53C28698DF52C4BAD39C5 /* Pods-OneStopNews.debug.xcconfig */,
 				E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */,
+				10069792838191F14785DBE3 /* Pods-OneStopNews.debug.xcconfig */,
+				A58EF73E218E8E557C219B25 /* Pods-OneStopNews.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 				98808EFD228A2E830068AE13 /* Views */,
 				98808EEF228A247B0068AE13 /* Assets.xcassets */,
 				98808EF4228A247B0068AE13 /* Info.plist */,
+				1D4B67B32293D62000CF9ADE /* PastelColors.swift */,
 			);
 			path = OneStopNews;
 			sourceTree = "<group>";
@@ -121,6 +130,7 @@
 				98EDBA82228FE6A60062E4E2 /* NYTimesViewController.swift */,
 				98EDBA84228FE6B60062E4E2 /* HuffingtonPostViewController.swift */,
 				98EDBA86228FE6C80062E4E2 /* NBCViewController.swift */,
+				1D4B67B12293C97C00CF9ADE /* UniversalTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,17 +243,19 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OneStopNews/Pods-OneStopNews-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-OneStopNews/Pods-OneStopNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CardParts/CardParts.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -254,15 +266,17 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneStopNews/Pods-OneStopNews-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneStopNews/Pods-OneStopNews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -276,6 +290,7 @@
 				98808EFB228A2D370068AE13 /* ExploreTopicsViewController.swift in Sources */,
 				98EDBA81228FE6880062E4E2 /* CNNViewController.swift in Sources */,
 				98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */,
+				1D4B67B42293D62000CF9ADE /* PastelColors.swift in Sources */,
 				98B0AE03228BFC8000CC0291 /* RoundedShadowCard.swift in Sources */,
 				98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */,
 				1D4B67AE2293B0D100CF9ADE /* Category.swift in Sources */,
@@ -283,6 +298,7 @@
 				1D4B67B02293B0FE00CF9ADE /* Provider.swift in Sources */,
 				98EDBA83228FE6A60062E4E2 /* NYTimesViewController.swift in Sources */,
 				98EDBA85228FE6B60062E4E2 /* HuffingtonPostViewController.swift in Sources */,
+				1D4B67B22293C97C00CF9ADE /* UniversalTableViewController.swift in Sources */,
 				98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +445,7 @@
 		};
 		98808EF8228A247B0068AE13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CE53C28698DF52C4BAD39C5 /* Pods-OneStopNews.debug.xcconfig */;
+			baseConfigurationReference = E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

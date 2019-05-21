@@ -18,10 +18,14 @@ class MainScreenViewController: UIViewController {
     
     var osnAPI  = OSNNetworking()
     
+    var articleDict = [String: [Article]]()
+    
+    var pastelColors = PastelColors()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.barTintColor = UIColor.red
+        navigationController?.navigationBar.barTintColor = UIColor.white
         navigationController?.navigationBar.tintColor = UIColor.black
         title = "One Stop News"
         
@@ -49,21 +53,23 @@ extension MainScreenViewController {
         var controllerArray : [UIViewController] = []
         
         // Create ViewController for each page in pagemenu
-        let firstVC = storyboard.instantiateViewController(withIdentifier: "CNN")
-        firstVC.view.backgroundColor = UIColor.red
+        let firstVC = storyboard.instantiateViewController(withIdentifier: "UniversalTableView") as! UniversalTableViewController
+        firstVC.pastelColorCombo = pastelColors.Latest
+        firstVC.view.backgroundColor = UIColor.clear
         
-        let secondVC = UIViewController()
-        secondVC.view.backgroundColor = UIColor.blue
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "UniversalTableView") as! UniversalTableViewController
+        firstVC.pastelColorCombo = pastelColors.World
+        secondVC.view.backgroundColor = UIColor.clear
 
         let thirdVC = UIViewController()
-        thirdVC.view.backgroundColor = UIColor.green
+        thirdVC.view.backgroundColor = UIColor.white
 
         let fourthVC = UIViewController()
-        fourthVC.view.backgroundColor = UIColor.purple
+        fourthVC.view.backgroundColor = UIColor.white
         
         // Add title for each ViewController page
-        firstVC.title = "CNN"
-        secondVC.title = "New York Times"
+        firstVC.title = "Latest"
+        secondVC.title = "World News"
         thirdVC.title = "Huffington Post"
         fourthVC.title = "NBC"
         
@@ -77,14 +83,14 @@ extension MainScreenViewController {
         let parameters: [CAPSPageMenuOption] = [
             //.menuItemWidthBasedOnTitleTextWidth(true),
             .menuItemWidth(150.0),
-            .scrollMenuBackgroundColor(.black),
+            .scrollMenuBackgroundColor(.white),
             .viewBackgroundColor(.white),
-            .selectionIndicatorColor(.red),
+            .selectionIndicatorColor(.black),
             .bottomMenuHairlineColor(.white),
             .menuHeight(65.0),
             .menuItemFont(UIFont.systemFont(ofSize: 15)),
             .centerMenuItems(true),
-            .selectedMenuItemLabelColor(.white),
+            .selectedMenuItemLabelColor(.black),
         ]
         
         // Initialize page menu with controller array, frame, and optional parameters
