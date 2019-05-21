@@ -9,14 +9,12 @@
 import UIKit
 import Pastel
 import ViewAnimator
+import DGElasticPullToRefresh
 
 class UniversalTableViewController: UITableViewController{
     
     var articleList = [Article]()
-    
     var pastelColorCombo = [UIColor]()
-    
-    //private let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
     
     let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
     let fadeAnimation = AnimationType.zoom(scale: 0.1)
@@ -32,9 +30,44 @@ class UniversalTableViewController: UITableViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loadPastel()
-
+        setUpTableViewContraints()
+        setUpTableViewRefresh()
     }
+    
+    
+    func setUpTableViewContraints(){
+        let insets = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
+        self.tableView.contentInset = insets
+    }
+    
+    func setUpTableViewRefresh(){
+        // Initialize tableView
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        loadingView.tintColor = UIColor(red: 78/255.0, green: 221/255.0, blue: 200/255.0, alpha: 1.0)
+        tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            // Add your logic here
+            // Do not forget to call dg_stopLoading() at the end
+//            self?.tableView.dg_stopLoading()
+            self!.stopLoading()
+            }, loadingView: loadingView)
+        
+        tableView.dg_setPullToRefreshFillColor(UIColor.white)
+        tableView.dg_setPullToRefreshBackgroundColor(UIColor.clear)
+        
+    }
+    
+    func stopLoading(){
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.tableView.dg_stopLoading()
+            
+            self.tableView.dg_removePullToRefresh()
+            self.setUpTableViewRefresh()
+        }
+    }
+
     
     
     func loadPastel(){
@@ -58,9 +91,8 @@ class UniversalTableViewController: UITableViewController{
         //                              UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0),
         //                              UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1.0)])
         
-        
+        // Start gradient animation
         pastelView.startAnimation()
-        //view.insertSubview(pastelView, at: 0)
         
         self.tableView.backgroundView = pastelView
         
@@ -68,7 +100,14 @@ class UniversalTableViewController: UITableViewController{
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCell", for: indexPath) as! UniversalTableViewCell
+        
+        let article = articleList[indexPath.item]
+        
+        cell.article = article
+        cell.title.text = article.title
+        cell.summary.text = article.summary
+        
         
         return cell
     }
@@ -80,7 +119,7 @@ class UniversalTableViewController: UITableViewController{
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return articleList.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

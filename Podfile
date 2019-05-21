@@ -13,4 +13,7 @@ target 'OneStopNews' do
     pod 'CardParts'
     pod 'Pastel'
     pod 'ViewAnimator'
+    pod 'DGElasticPullToRefresh'
+    pod 'lottie-ios'
+    
 end

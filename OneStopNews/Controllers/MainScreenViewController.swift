@@ -22,6 +22,8 @@ class MainScreenViewController: UIViewController {
     
     var pastelColors = PastelColors()
     
+    //TODO: - add activity loaders
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,14 +31,16 @@ class MainScreenViewController: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.black
         title = "One Stop News"
         
-        // Call Network
-        //osnAPI.getArticlesFromProvider(provider: Provider.CNN.rawValue, category: Category.Latest.rawValue)
-        
         osnAPI.getAllCategoriesFromProvider(provider: Provider.CNN.rawValue, completion: { (articleDict) in
-            print(articleDict)
+            //print(articleDict)
+            print("Loading Articles Completed")
+            
+            // Update UI
+            DispatchQueue.main.async {
+                self.setupPageMenu(articleDict: articleDict)
+            }
         })
         
-        setupPageMenu()
     }
 }
 
@@ -45,24 +49,44 @@ class MainScreenViewController: UIViewController {
 
 extension MainScreenViewController {
     
-    func setupPageMenu() {
+    // Passing in articles to set up page
+    func setupPageMenu(articleDict: [String: [Article]]) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // Array of ViewControllers containing each page in PageMenu
         var controllerArray : [UIViewController] = []
         
+        
+        // ******************* Latest VC ******************* //
         // Create ViewController for each page in pagemenu
         let firstVC = storyboard.instantiateViewController(withIdentifier: "UniversalTableView") as! UniversalTableViewController
         firstVC.pastelColorCombo = pastelColors.Latest
+        
+        if let dict1 = articleDict["latest"] {
+            firstVC.articleList = dict1
+        }
         firstVC.view.backgroundColor = UIColor.clear
         
+        
+        
+        // ******************* World VC ******************* //
         let secondVC = storyboard.instantiateViewController(withIdentifier: "UniversalTableView") as! UniversalTableViewController
-        firstVC.pastelColorCombo = pastelColors.World
+        secondVC.pastelColorCombo = pastelColors.World
+        if let dict2 = articleDict["world"] {
+            secondVC.articleList = dict2
+        }
         secondVC.view.backgroundColor = UIColor.clear
-
-        let thirdVC = UIViewController()
-        thirdVC.view.backgroundColor = UIColor.white
+        
+        
+        // ******************* US VC ******************* //
+        let thirdVC = storyboard.instantiateViewController(withIdentifier: "UniversalTableView") as! UniversalTableViewController
+        thirdVC.pastelColorCombo = pastelColors.Latest
+        if let dict3 = articleDict["us"] {
+            thirdVC.articleList = dict3
+        }
+        thirdVC.view.backgroundColor = UIColor.clear
+        
 
         let fourthVC = UIViewController()
         fourthVC.view.backgroundColor = UIColor.white
@@ -70,8 +94,8 @@ extension MainScreenViewController {
         // Add title for each ViewController page
         firstVC.title = "Latest"
         secondVC.title = "World News"
-        thirdVC.title = "Huffington Post"
-        fourthVC.title = "NBC"
+        thirdVC.title = "US News"
+        fourthVC.title = "Politics"
         
         // Append the ViewController to the array to display in PageMenu
         controllerArray.append(firstVC)
@@ -92,6 +116,9 @@ extension MainScreenViewController {
             .centerMenuItems(true),
             .selectedMenuItemLabelColor(.black),
         ]
+        
+        firstVC.tableView.reloadData()
+        secondVC.tableView.reloadData()
         
         // Initialize page menu with controller array, frame, and optional parameters
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0.0, y: 85.0, width: self.view.frame.width, height: self.view.frame.height), pageMenuOptions: parameters)

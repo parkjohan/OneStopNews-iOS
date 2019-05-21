@@ -5,8 +5,10 @@ PODS:
     - RxDataSources (~> 3.1)
     - RxGesture (~> 2.2)
     - RxSwift (~> 4.5)
+  - DGElasticPullToRefresh (1.1)
   - Differentiator (3.1.0)
   - Hero (1.4.0)
+  - lottie-ios (3.0.6)
   - PageMenu (2.0.0)
   - Pastel (0.5.1)
   - RxCocoa (4.5.0):
@@ -25,7 +27,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - CardParts
+  - DGElasticPullToRefresh
   - Hero
+  - lottie-ios
   - PageMenu
   - Pastel
   - SwiftyJSON
@@ -35,8 +39,10 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - CardParts
+    - DGElasticPullToRefresh
     - Differentiator
     - Hero
+    - lottie-ios
     - PageMenu
     - Pastel
     - RxCocoa
@@ -49,8 +55,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   CardParts: 85304e4aa9257f8b7274b9c2527c56c06a15b7f5
+  DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  lottie-ios: d030b6cda141cfd8bbaa3db89264785e6fdf675a
   PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
   Pastel: b3dd5b8d612dac06ae7c63c97c45c900829bc139
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
@@ -60,6 +68,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   ViewAnimator: 173932c659a43c5a15c665878750d92801ae2cf1
 
-PODFILE CHECKSUM: d8d7b8a711730cfa35794923d923768d74ba02ad
+PODFILE CHECKSUM: e279966a9163ad3987529d72e17561129dfb27e0
 
 COCOAPODS: 1.5.3

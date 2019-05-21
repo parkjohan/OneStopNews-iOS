@@ -11,6 +11,7 @@
 		1D4B67B02293B0FE00CF9ADE /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67AF2293B0FE00CF9ADE /* Provider.swift */; };
 		1D4B67B22293C97C00CF9ADE /* UniversalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67B12293C97C00CF9ADE /* UniversalTableViewController.swift */; };
 		1D4B67B42293D62000CF9ADE /* PastelColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67B32293D62000CF9ADE /* PastelColors.swift */; };
+		1D4B67B62294946900CF9ADE /* UniversalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67B52294946900CF9ADE /* UniversalTableViewCell.swift */; };
 		3788F2960A3520FF4B31B3F1 /* Pods_OneStopNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */; };
 		98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EE8228A247A0068AE13 /* AppDelegate.swift */; };
 		98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EEA228A247A0068AE13 /* MainScreenViewController.swift */; };
@@ -34,6 +35,7 @@
 		1D4B67AF2293B0FE00CF9ADE /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		1D4B67B12293C97C00CF9ADE /* UniversalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewController.swift; sourceTree = "<group>"; };
 		1D4B67B32293D62000CF9ADE /* PastelColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelColors.swift; sourceTree = "<group>"; };
+		1D4B67B52294946900CF9ADE /* UniversalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewCell.swift; sourceTree = "<group>"; };
 		73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneStopNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE5228A247A0068AE13 /* OneStopNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneStopNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE8228A247A0068AE13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				98EDBA84228FE6B60062E4E2 /* HuffingtonPostViewController.swift */,
 				98EDBA86228FE6C80062E4E2 /* NBCViewController.swift */,
 				1D4B67B12293C97C00CF9ADE /* UniversalTableViewController.swift */,
+				1D4B67B52294946900CF9ADE /* UniversalTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-OneStopNews/Pods-OneStopNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CardParts/CardParts.framework",
+				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
@@ -256,6 +260,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -263,6 +268,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CardParts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
@@ -273,6 +279,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -297,6 +304,7 @@
 				98EDBA87228FE6C80062E4E2 /* NBCViewController.swift in Sources */,
 				1D4B67B02293B0FE00CF9ADE /* Provider.swift in Sources */,
 				98EDBA83228FE6A60062E4E2 /* NYTimesViewController.swift in Sources */,
+				1D4B67B62294946900CF9ADE /* UniversalTableViewCell.swift in Sources */,
 				98EDBA85228FE6B60062E4E2 /* HuffingtonPostViewController.swift in Sources */,
 				1D4B67B22293C97C00CF9ADE /* UniversalTableViewController.swift in Sources */,
 				98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */,
