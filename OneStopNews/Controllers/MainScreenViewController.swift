@@ -16,12 +16,22 @@ class MainScreenViewController: UIViewController {
     
     var pageMenu: CAPSPageMenu?
     
+    var osnAPI  = OSNNetworking()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.navigationBar.barTintColor = UIColor.red
         navigationController?.navigationBar.tintColor = UIColor.black
         title = "One Stop News"
+        
+        // Call Network
+        //osnAPI.getArticlesFromProvider(provider: Provider.CNN.rawValue, category: Category.Latest.rawValue)
+        
+        osnAPI.getAllCategoriesFromProvider(provider: Provider.CNN.rawValue, completion: { (articleDict) in
+            print(articleDict)
+        })
+        
         setupPageMenu()
     }
 }
