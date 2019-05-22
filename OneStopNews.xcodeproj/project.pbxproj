@@ -471,7 +471,7 @@
 		};
 		98808EF8228A247B0068AE13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10069792838191F14785DBE3 /* Pods-OneStopNews.debug.xcconfig */;
+			baseConfigurationReference = E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -491,7 +491,7 @@
 		};
 		98808EF9228A247B0068AE13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A58EF73E218E8E557C219B25 /* Pods-OneStopNews.release.xcconfig */;
+			baseConfigurationReference = E158897B0DF26B229C13FDB9 /* Pods-OneStopNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
