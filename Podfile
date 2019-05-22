@@ -13,7 +13,7 @@ target 'OneStopNews' do
     pod 'CardParts'
     pod 'Pastel'
     pod 'ViewAnimator'
-    pod 'DGElasticPullToRefresh'
+    pod 'DGElasticPullToRefresh' , :git => 'https://github.com/KennethTsang/DGElasticPullToRefresh'
     pod 'lottie-ios'
     
 end

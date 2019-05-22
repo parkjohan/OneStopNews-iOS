@@ -27,7 +27,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - CardParts
-  - DGElasticPullToRefresh
+  - DGElasticPullToRefresh (from `https://github.com/KennethTsang/DGElasticPullToRefresh`)
   - Hero
   - lottie-ios
   - PageMenu
@@ -39,7 +39,6 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - CardParts
-    - DGElasticPullToRefresh
     - Differentiator
     - Hero
     - lottie-ios
@@ -51,6 +50,15 @@ SPEC REPOS:
     - RxSwift
     - SwiftyJSON
     - ViewAnimator
+
+EXTERNAL SOURCES:
+  DGElasticPullToRefresh:
+    :git: https://github.com/KennethTsang/DGElasticPullToRefresh
+
+CHECKOUT OPTIONS:
+  DGElasticPullToRefresh:
+    :commit: 274c5fe8998e31ea71a4dc250c7edee51e52a978
+    :git: https://github.com/KennethTsang/DGElasticPullToRefresh
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -68,6 +76,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   ViewAnimator: 173932c659a43c5a15c665878750d92801ae2cf1
 
-PODFILE CHECKSUM: e279966a9163ad3987529d72e17561129dfb27e0
+PODFILE CHECKSUM: dcd20c3c769535a8f306de7c40a8d77316de1891
 
 COCOAPODS: 1.5.3
