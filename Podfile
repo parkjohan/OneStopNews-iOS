@@ -17,5 +17,6 @@ target 'OneStopNews' do
     pod 'lottie-ios'
     pod 'RAMReel'
     pod 'CarLensCollectionViewLayout', '~> 1.2.0'
+    pod 'SideMenuSwift'
     
 end

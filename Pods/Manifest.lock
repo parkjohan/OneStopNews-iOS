@@ -23,6 +23,7 @@ PODS:
     - RxCocoa (~> 4.5)
     - RxSwift (~> 4.5)
   - RxSwift (4.5.0)
+  - SideMenuSwift (2.0.0)
   - SwiftyJSON (5.0.0)
   - ViewAnimator (2.5.1)
 
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - PageMenu
   - Pastel
   - RAMReel
+  - SideMenuSwift
   - SwiftyJSON
   - ViewAnimator
 
@@ -54,6 +56,7 @@ SPEC REPOS:
     - RxDataSources
     - RxGesture
     - RxSwift
+    - SideMenuSwift
     - SwiftyJSON
     - ViewAnimator
 
@@ -81,9 +84,10 @@ SPEC CHECKSUMS:
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxGesture: c1b7bf17166b0ef9d642a9510f8bac5785f18990
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SideMenuSwift: 1bee5a0e54c6df7d8106f749b82567eae5c6d974
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   ViewAnimator: 173932c659a43c5a15c665878750d92801ae2cf1
 
-PODFILE CHECKSUM: 69da15ad98b28ab2f90b4915ec5251d18f46ae4c
+PODFILE CHECKSUM: fa0c7381f5fa766428c53b0570b582a071f5ca3e
 
 COCOAPODS: 1.5.3
