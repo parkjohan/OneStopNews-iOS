@@ -23,7 +23,7 @@ class MainScreenViewController: UIViewController {
     
     var pastelColors = PastelColors()
     
-    //TODO: - add activity loaders
+    //TODO: - Get place holder image
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +34,27 @@ class MainScreenViewController: UIViewController {
         
         // Get animation
         let animationView = AnimationView(name: "Newspaper-animation")
-        navigationController?.view.addSubview(animationView)
-        animationView.play()
+        
+        let size = 450
+
+        animationView.frame = CGRect(x: 0, y: 0, width: size, height: size)
+        animationView.center.x = self.view.center.x
+        animationView.center.y = self.view.center.y
+        
+        self.view.addSubview(animationView)
+        
+
+        
+        animationView.play(fromProgress: 0,
+                           toProgress: 1,
+                           loopMode: LottieLoopMode.loop,
+                           completion: { (finished) in
+                            if finished {
+                                print("Animation Complete")
+                            } else {
+                                print("Animation cancelled")
+                            }
+        })
         
         osnAPI.getAllCategoriesFromProvider(provider: Provider.NYT.rawValue, completion: { (articleDict) in
             //print(articleDict)
@@ -71,8 +90,6 @@ extension MainScreenViewController {
     
     // Passing in articles to set up page
     func setupPageMenu(articleDict: [String: [Article]]) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // Array of ViewControllers containing each page in PageMenu
         var controllerArray : [UIViewController] = []

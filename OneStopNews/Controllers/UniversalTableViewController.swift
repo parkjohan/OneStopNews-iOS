@@ -23,7 +23,6 @@ class UniversalTableViewController: UITableViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         loadPastel()
-        //self.view.animate(animations: [rotateAnimation, fadeAnimation], reversed: false, duration: 1)
         
         UIView.animate(views: self.tableView.visibleCells(in: 0), animations: [rotateAnimation, fadeAnimation], duration: 0.7)
     }
