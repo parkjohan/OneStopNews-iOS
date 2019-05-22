@@ -68,7 +68,7 @@ class MainScreenViewController: UIViewController {
             // Append global list contents without duplicates
             for articleList in articleDict {
                 OSNSingleton.shared.OSNGlobalList.append(contentsOf: articleList.value)
-                var list = Array(Set(OSNSingleton.shared.OSNGlobalList))
+                let list = Array(Set(OSNSingleton.shared.OSNGlobalList))
                 OSNSingleton.shared.OSNGlobalList = list
             }
             
