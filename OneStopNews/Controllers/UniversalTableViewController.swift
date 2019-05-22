@@ -108,6 +108,17 @@ class UniversalTableViewController: UITableViewController{
         cell.title.text = article.title
         cell.summary.text = article.summary
         
+        //cell.newsImage.image = UIImage(named: "placeholder")
+        cell.newsImage.downloadImageFrom(link: article.image, contentMode: UIView.ContentMode.scaleAspectFit)
+        
+        // For word wrapping
+//        cell.layoutIfNeeded()
+//        let imageFrame = UIBezierPath(rect: cell.newsImage.frame)
+//        cell.summary.textContainer.exclusionPaths = [imageFrame]
+        
+        cell.newsImage.setRounded()
+        
+        
         
         return cell
     }

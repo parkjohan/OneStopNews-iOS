@@ -11,6 +11,7 @@ import Hero
 import PageMenu
 import Alamofire
 import SwiftyJSON
+import Lottie
 
 class MainScreenViewController: UIViewController {
     
@@ -31,6 +32,11 @@ class MainScreenViewController: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.black
         title = "One Stop News"
         
+        // Get animation
+        let animationView = AnimationView(name: "Newspaper-animation")
+        navigationController?.view.addSubview(animationView)
+        animationView.play()
+        
         osnAPI.getAllCategoriesFromProvider(provider: Provider.NYT.rawValue, completion: { (articleDict) in
             //print(articleDict)
             print("Loading Articles Completed")
@@ -39,8 +45,9 @@ class MainScreenViewController: UIViewController {
             DispatchQueue.main.async {
                 self.setupPageMenu(articleDict: articleDict)
             }
+            animationView.stop()
+            animationView.isHidden = true
         })
-        
     }
 }
 

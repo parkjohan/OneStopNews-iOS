@@ -12,6 +12,9 @@ class UniversalTableViewCell: UITableViewCell {
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var summary: UITextView!
+    @IBOutlet weak var newsImage: UIImageView!
+    
+    
     
     var article: Article?
     

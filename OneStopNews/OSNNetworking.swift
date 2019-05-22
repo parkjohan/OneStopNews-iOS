@@ -49,7 +49,7 @@ class OSNNetworking {
                     let summary = item["summary"].string
                     let url = item["url"].string
                     let datePublshed = item["datePublished"].string
-                    let image = item["image"].string
+                    let image = item["media_content"][0]["url"].string
                     
                     // Create new Article object
                     let article = Article(

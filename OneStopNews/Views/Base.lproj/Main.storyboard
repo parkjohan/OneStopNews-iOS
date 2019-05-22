@@ -53,46 +53,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="251" id="unR-es-Lyb" customClass="UniversalTableViewCell" customModule="OneStopNews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="251"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="337" id="unR-es-Lyb" customClass="UniversalTableViewCell" customModule="OneStopNews" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="337"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="unR-es-Lyb" id="XTW-LU-7ky">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="unR-es-Lyb" id="XTW-LU-7ky">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="337"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKI-Kx-oJf" customClass="RoundedShadowCardView" customModule="OneStopNews" customModuleProvider="target">
-                                            <rect key="frame" x="32" y="23" width="350" height="200"/>
+                                            <rect key="frame" x="32" y="23" width="350" height="282"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS IS A TITLE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mtx-vY-Uo4">
-                                                    <rect key="frame" x="16" y="15" width="324" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="PjN-mc-4iO"/>
-                                                        <constraint firstAttribute="width" constant="324" id="hb0-84-xpT"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HS4-ig-ntT">
-                                                    <rect key="frame" x="15" y="70" width="325" height="111"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="111" id="e1W-Py-maE"/>
-                                                    </constraints>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" indicatorStyle="black" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HS4-ig-ntT">
+                                                    <rect key="frame" x="5" y="116" width="337" height="152"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oaw-Hd-KaA">
+                                                    <rect key="frame" x="8" y="8" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="Cxs-ys-NVl"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Lvs-aW-MQr"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS IS A TITLE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mtx-vY-Uo4">
+                                                    <rect key="frame" x="123" y="30" width="217" height="79"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="Mtx-vY-Uo4" firstAttribute="top" secondItem="sKI-Kx-oJf" secondAttribute="top" constant="15" id="8Ua-hb-Abc"/>
+                                                <constraint firstItem="Mtx-vY-Uo4" firstAttribute="top" secondItem="sKI-Kx-oJf" secondAttribute="top" constant="30" id="2To-Me-MX1"/>
+                                                <constraint firstItem="Mtx-vY-Uo4" firstAttribute="leading" secondItem="Oaw-Hd-KaA" secondAttribute="trailing" constant="15" id="9DP-Od-aOe"/>
                                                 <constraint firstAttribute="width" constant="350" id="CAe-ag-69Y"/>
-                                                <constraint firstAttribute="height" constant="200" id="HIA-Ki-iih"/>
-                                                <constraint firstAttribute="trailing" secondItem="HS4-ig-ntT" secondAttribute="trailing" constant="10" id="M3a-gS-iRf"/>
-                                                <constraint firstItem="Mtx-vY-Uo4" firstAttribute="leading" secondItem="sKI-Kx-oJf" secondAttribute="leading" constant="16" id="XcD-of-bAo"/>
-                                                <constraint firstItem="HS4-ig-ntT" firstAttribute="leading" secondItem="sKI-Kx-oJf" secondAttribute="leading" constant="15" id="fGW-HE-XkO"/>
-                                                <constraint firstItem="HS4-ig-ntT" firstAttribute="top" secondItem="Mtx-vY-Uo4" secondAttribute="bottom" constant="15" id="jBh-uV-6yq"/>
+                                                <constraint firstItem="Oaw-Hd-KaA" firstAttribute="leading" secondItem="sKI-Kx-oJf" secondAttribute="leadingMargin" id="Dnl-yg-rvb"/>
+                                                <constraint firstItem="HS4-ig-ntT" firstAttribute="top" secondItem="Oaw-Hd-KaA" secondAttribute="bottom" constant="8" id="Fw7-v7-2jI"/>
+                                                <constraint firstItem="Oaw-Hd-KaA" firstAttribute="top" secondItem="sKI-Kx-oJf" secondAttribute="top" constant="8" id="JqP-6t-1RG"/>
+                                                <constraint firstAttribute="bottom" secondItem="HS4-ig-ntT" secondAttribute="bottom" constant="14" id="VfT-FL-woD"/>
+                                                <constraint firstItem="HS4-ig-ntT" firstAttribute="leading" secondItem="sKI-Kx-oJf" secondAttribute="leading" constant="5" id="dC8-lZ-cQz"/>
+                                                <constraint firstAttribute="trailing" secondItem="HS4-ig-ntT" secondAttribute="trailing" constant="8" id="h3N-K9-1Mb"/>
+                                                <constraint firstItem="HS4-ig-ntT" firstAttribute="centerX" secondItem="sKI-Kx-oJf" secondAttribute="centerX" constant="-1.5" id="ltM-GN-CHv"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mtx-vY-Uo4" secondAttribute="trailing" constant="10" id="oAK-5x-Uim"/>
+                                                <constraint firstItem="HS4-ig-ntT" firstAttribute="top" secondItem="Mtx-vY-Uo4" secondAttribute="bottom" constant="7" id="yEc-gu-8Ds"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -104,6 +109,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <outlet property="newsImage" destination="Oaw-Hd-KaA" id="nG9-7V-VwX"/>
                                     <outlet property="summary" destination="HS4-ig-ntT" id="vPr-1Y-7CO"/>
                                     <outlet property="title" destination="Mtx-vY-Uo4" id="LW2-PE-ofW"/>
                                 </connections>
