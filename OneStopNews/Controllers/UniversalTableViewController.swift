@@ -10,6 +10,7 @@ import UIKit
 import Pastel
 import ViewAnimator
 import DGElasticPullToRefresh
+import CarLensCollectionViewLayout
 
 class UniversalTableViewController: UITableViewController{
     
@@ -110,16 +111,28 @@ class UniversalTableViewController: UITableViewController{
         //cell.newsImage.image = UIImage(named: "placeholder")
         cell.newsImage.downloadImageFrom(link: article.image, contentMode: UIView.ContentMode.scaleAspectFit)
         
-        // For word wrapping
-//        cell.layoutIfNeeded()
-//        let imageFrame = UIBezierPath(rect: cell.newsImage.frame)
-//        cell.summary.textContainer.exclusionPaths = [imageFrame]
-        
         cell.newsImage.setRounded()
         
         
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let currentArticle = articleList[indexPath.row]
+
+        print(currentArticle.title)
+        print(currentArticle.url)
+        
+        let vc = ArticlesCollectionViewController(collectionViewLayout: CarLensCollectionViewLayout())
+        let navController = UINavigationController(rootViewController: vc)
+        
+        // Pass in articles list
+        vc.articles = articleList
+        
+        // Push view controller
+        present(navController, animated: true, completion: nil)
+
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

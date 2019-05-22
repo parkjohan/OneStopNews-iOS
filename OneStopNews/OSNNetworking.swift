@@ -47,9 +47,9 @@ class OSNNetworking {
                 for (_,item) in articleJSON {
                     let title = item["title"].string
                     let summary = item["summary"].string
-                    let url = item["url"].string
+                    let url = item["link"].string // Change this depending on Provider with if let
                     let datePublshed = item["datePublished"].string
-                    let image = item["media_content"][0]["url"].string
+                    let image = item["media_content"][0]["url"].string // Change this depending on Provider with if let, or case
                     
                     // Create new Article object
                     let article = Article(

@@ -15,6 +15,8 @@
 		1D4B67B82294EF7200CF9ADE /* Newspaper-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D4B67B72294EF7100CF9ADE /* Newspaper-animation.json */; };
 		1D4B67BA2294F3FB00CF9ADE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67B92294F3FB00CF9ADE /* Helpers.swift */; };
 		1D4B67BC2295B49B00CF9ADE /* OSNSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67BB2295B49B00CF9ADE /* OSNSingleton.swift */; };
+		1D4B67BE2295C27400CF9ADE /* ArticlesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67BD2295C27400CF9ADE /* ArticlesCollectionViewController.swift */; };
+		1D4B67C02295C2EB00CF9ADE /* ArticlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B67BF2295C2EB00CF9ADE /* ArticlesCollectionViewCell.swift */; };
 		3788F2960A3520FF4B31B3F1 /* Pods_OneStopNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */; };
 		98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EE8228A247A0068AE13 /* AppDelegate.swift */; };
 		98808EEB228A247A0068AE13 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808EEA228A247A0068AE13 /* MainScreenViewController.swift */; };
@@ -42,6 +44,8 @@
 		1D4B67B72294EF7100CF9ADE /* Newspaper-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Newspaper-animation.json"; sourceTree = "<group>"; };
 		1D4B67B92294F3FB00CF9ADE /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		1D4B67BB2295B49B00CF9ADE /* OSNSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSNSingleton.swift; sourceTree = "<group>"; };
+		1D4B67BD2295C27400CF9ADE /* ArticlesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewController.swift; sourceTree = "<group>"; };
+		1D4B67BF2295C2EB00CF9ADE /* ArticlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewCell.swift; sourceTree = "<group>"; };
 		73A73CED7B5633A158318DAC /* Pods_OneStopNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneStopNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE5228A247A0068AE13 /* OneStopNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneStopNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98808EE8228A247A0068AE13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			children = (
 				98808EEA228A247A0068AE13 /* MainScreenViewController.swift */,
 				1D4B67BB2295B49B00CF9ADE /* OSNSingleton.swift */,
+				1D4B67BD2295C27400CF9ADE /* ArticlesCollectionViewController.swift */,
 				98808EFA228A2D370068AE13 /* ExploreTopicsViewController.swift */,
 				98B0AE02228BFC8000CC0291 /* RoundedShadowCard.swift */,
 				98EDBA80228FE6880062E4E2 /* CNNViewController.swift */,
@@ -143,6 +148,7 @@
 				98EDBA86228FE6C80062E4E2 /* NBCViewController.swift */,
 				1D4B67B12293C97C00CF9ADE /* UniversalTableViewController.swift */,
 				1D4B67B52294946900CF9ADE /* UniversalTableViewCell.swift */,
+				1D4B67BF2295C2EB00CF9ADE /* ArticlesCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				98808EE9228A247A0068AE13 /* AppDelegate.swift in Sources */,
 				1D4B67AE2293B0D100CF9ADE /* Category.swift in Sources */,
 				98EDBA87228FE6C80062E4E2 /* NBCViewController.swift in Sources */,
+				1D4B67BE2295C27400CF9ADE /* ArticlesCollectionViewController.swift in Sources */,
 				1D4B67B02293B0FE00CF9ADE /* Provider.swift in Sources */,
 				98EDBA83228FE6A60062E4E2 /* NYTimesViewController.swift in Sources */,
 				1D4B67BA2294F3FB00CF9ADE /* Helpers.swift in Sources */,
@@ -326,6 +333,7 @@
 				1D4B67B22293C97C00CF9ADE /* UniversalTableViewController.swift in Sources */,
 				98808F00228A42180068AE13 /* OSNNetworking.swift in Sources */,
 				1D4B67BC2295B49B00CF9ADE /* OSNSingleton.swift in Sources */,
+				1D4B67C02295C2EB00CF9ADE /* ArticlesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
