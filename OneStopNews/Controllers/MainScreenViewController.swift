@@ -64,11 +64,22 @@ class MainScreenViewController: UIViewController {
             DispatchQueue.main.async {
                 self.setupPageMenu(articleDict: articleDict)
             }
+            
+            // Append global list contents without duplicates
+            for articleList in articleDict {
+                OSNSingleton.shared.OSNGlobalList.append(contentsOf: articleList.value)
+                var list = Array(Set(OSNSingleton.shared.OSNGlobalList))
+                OSNSingleton.shared.OSNGlobalList = list
+            }
+            
+            
             animationView.stop()
             animationView.isHidden = true
         })
     }
 }
+
+
 
 
 //MARK: - PageMenu Controller

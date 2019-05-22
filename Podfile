@@ -15,5 +15,7 @@ target 'OneStopNews' do
     pod 'ViewAnimator'
     pod 'DGElasticPullToRefresh' , :git => 'https://github.com/KennethTsang/DGElasticPullToRefresh'
     pod 'lottie-ios'
+    pod 'RAMReel'
+    pod 'CarLensCollectionViewLayout', '~> 1.2.0'
     
 end

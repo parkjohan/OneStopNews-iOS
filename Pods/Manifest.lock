@@ -5,12 +5,14 @@ PODS:
     - RxDataSources (~> 3.1)
     - RxGesture (~> 2.2)
     - RxSwift (~> 4.5)
+  - CarLensCollectionViewLayout (1.2.0)
   - DGElasticPullToRefresh (1.1)
   - Differentiator (3.1.0)
   - Hero (1.4.0)
   - lottie-ios (3.0.6)
   - PageMenu (2.0.0)
   - Pastel (0.5.1)
+  - RAMReel (4.1.0)
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxDataSources (3.1.0):
@@ -27,11 +29,13 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - CardParts
+  - CarLensCollectionViewLayout (~> 1.2.0)
   - DGElasticPullToRefresh (from `https://github.com/KennethTsang/DGElasticPullToRefresh`)
   - Hero
   - lottie-ios
   - PageMenu
   - Pastel
+  - RAMReel
   - SwiftyJSON
   - ViewAnimator
 
@@ -39,11 +43,13 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - CardParts
+    - CarLensCollectionViewLayout
     - Differentiator
     - Hero
     - lottie-ios
     - PageMenu
     - Pastel
+    - RAMReel
     - RxCocoa
     - RxDataSources
     - RxGesture
@@ -63,12 +69,14 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   CardParts: 85304e4aa9257f8b7274b9c2527c56c06a15b7f5
+  CarLensCollectionViewLayout: 75a28307dbd7dbacbba417d13501415ff3471a68
   DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   lottie-ios: d030b6cda141cfd8bbaa3db89264785e6fdf675a
   PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
   Pastel: b3dd5b8d612dac06ae7c63c97c45c900829bc139
+  RAMReel: 198e41f62d65f54c44797679ade03b4a1cef9709
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxGesture: c1b7bf17166b0ef9d642a9510f8bac5785f18990
@@ -76,6 +84,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   ViewAnimator: 173932c659a43c5a15c665878750d92801ae2cf1
 
-PODFILE CHECKSUM: dcd20c3c769535a8f306de7c40a8d77316de1891
+PODFILE CHECKSUM: 69da15ad98b28ab2f90b4915ec5251d18f46ae4c
 
 COCOAPODS: 1.5.3
