@@ -18,5 +18,6 @@ final class OSNSingleton {
     
     var OSNGlobalList = [Article]()
     
+    var currentGlobalList = [Article]()
     
 }
