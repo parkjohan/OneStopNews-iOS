@@ -12,24 +12,6 @@ import Alamofire
 
 class OSNNetworking {
     
-    // Get articles for using url(String) and parameters.
-    func getArticles(url: String, parameters: [String:Any]) {
-        Alamofire.request(url, method: .get, parameters: parameters).responseJSON { (response) in
-            if response.result.isSuccess {
-                print("Successful! Got articles.")
-                let articleJSON: JSON = JSON(response.result.value!)
-                print(articleJSON)
-                //self.updateArticles(json: articleJSON)
-            } else {
-                print("Error! \(String(describing: response.result.error))")
-            }
-        }
-    }
-    
-    
-    
-    
-    
     // Retrive a list of articles from server based on provider and category
     // Wait for completion
     func getArticlesFromProvider(provider: String, category: String, completion : @escaping ([Article])->()){
